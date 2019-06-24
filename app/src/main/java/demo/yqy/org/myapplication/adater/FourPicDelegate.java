@@ -14,15 +14,15 @@ import demo.yqy.org.myapplication.bean.ShowBean;
  * @create 19-6-24
  * @Describe
  */
-public class ThreePicDelegate implements ItemViewDelegate<ShowBean> {
+public class FourPicDelegate implements ItemViewDelegate<ShowBean> {
     @Override
     public int getItemViewLayoutId() {
-        return R.layout.layout_item_three;
+        return R.layout.layout_item_four;
     }
 
     @Override
     public boolean isForViewType(ShowBean item, int position) {
-        return item.getShowType() == ShowBean.Type_Three_Pic;
+        return item.getShowType() == ShowBean.Type_Four_Pic;
     }
 
     @Override
@@ -31,6 +31,5 @@ public class ThreePicDelegate implements ItemViewDelegate<ShowBean> {
         if (itemBean != null) {
             ((ImageView) holder.getView(R.id.iv_pic)).setImageResource(itemBean.getDrawableId());
         }
-
     }
 }
