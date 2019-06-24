@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/none_event_img_meinv0" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_pic"
+        android:layout_marginTop="8dp"
+        android:textColor="#1a1919"
+        android:textSize="16sp"
+        tools:text="日本地震道路毁坏但房屋建筑完整屋建筑完日本地震道路毁坏但房屋建筑完整屋建筑完" />
+
+</RelativeLayout>
