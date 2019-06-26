@@ -27,7 +27,7 @@ public class ThreePicDelegate implements ItemViewDelegate<ShowBean> {
 
     @Override
     public void convert(ViewHolder holder, ShowBean showBean, int position) {
-        final ItemBean itemBean = showBean.getItemBean();
+        final ItemBean itemBean = (ItemBean) showBean;
         if (itemBean != null) {
             ((ImageView) holder.getView(R.id.iv_pic)).setImageResource(itemBean.getDrawableId());
         }

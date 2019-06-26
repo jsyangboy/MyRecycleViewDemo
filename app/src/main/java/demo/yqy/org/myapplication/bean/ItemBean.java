@@ -5,7 +5,7 @@ package demo.yqy.org.myapplication.bean;
  * @create 19-6-24
  * @Describe
  */
-public class ItemBean {
+public class ItemBean extends ShowBean{
 
     private String title;//对应的标题
     private String time;//视频的时长

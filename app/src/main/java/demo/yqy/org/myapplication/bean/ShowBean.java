@@ -15,7 +15,7 @@ public class ShowBean {
 
     private int showType;
 
-    private TitleBean titleBean;
+    /*private TitleBean titleBean;
     private ItemBean itemBean;
 
     public TitleBean getTitleBean() {
@@ -33,7 +33,7 @@ public class ShowBean {
     public void setItemBean(ItemBean itemBean) {
         this.itemBean = itemBean;
     }
-
+*/
     public int getShowType() {
         return showType;
     }

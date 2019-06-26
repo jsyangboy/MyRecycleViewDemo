@@ -132,15 +132,13 @@ public class MainActivity extends AppCompatActivity {
      * @param title
      * @return
      */
-    private ShowBean loadTitle(String title) {
-        final ShowBean showBean = new ShowBean();
-        showBean.setShowType(ShowBean.Type_Title);
-
+    private TitleBean loadTitle(String title) {
         if (TextUtils.isEmpty(title)) {
             title = "";
         }
-        showBean.setTitleBean(new TitleBean(title));
-        return showBean;
+        TitleBean titleBean = new TitleBean(title);
+        titleBean.setShowType(ShowBean.Type_Title);
+        return titleBean;
     }
 
     /**
@@ -150,9 +148,6 @@ public class MainActivity extends AppCompatActivity {
      * @return
      */
     private ShowBean loadBigPic(String title) {
-        final ShowBean showBean = new ShowBean();
-        showBean.setShowType(ShowBean.Type_Big_Pic);
-
         if (TextUtils.isEmpty(title)) {
             title = "";
         }
@@ -160,8 +155,8 @@ public class MainActivity extends AppCompatActivity {
         final ItemBean itemBean = new ItemBean();
         itemBean.setTitle(title);
         itemBean.setDrawableId(R.mipmap.none_event_img_meinv0);
-        showBean.setItemBean(itemBean);
-        return showBean;
+        itemBean.setShowType(ShowBean.Type_Big_Pic);
+        return itemBean;
     }
 
     /**
@@ -171,9 +166,6 @@ public class MainActivity extends AppCompatActivity {
      * @return
      */
     private ShowBean loadTowPic(String title) {
-        final ShowBean showBean = new ShowBean();
-        showBean.setShowType(ShowBean.Type_Tow_Pic);
-
         if (TextUtils.isEmpty(title)) {
             title = "";
         }
@@ -181,9 +173,9 @@ public class MainActivity extends AppCompatActivity {
         final ItemBean itemBean = new ItemBean();
         itemBean.setTitle(title);
         itemBean.setDrawableId(R.mipmap.none_event_img_meinv1);
-        showBean.setItemBean(itemBean);
+        itemBean.setShowType(ShowBean.Type_Tow_Pic);
 
-        return showBean;
+        return itemBean;
     }
 
     /**
@@ -193,8 +185,7 @@ public class MainActivity extends AppCompatActivity {
      * @return
      */
     private ShowBean loadThreePic(String title) {
-        final ShowBean showBean = new ShowBean();
-        showBean.setShowType(ShowBean.Type_Three_Pic);
+
 
         if (TextUtils.isEmpty(title)) {
             title = "";
@@ -203,8 +194,8 @@ public class MainActivity extends AppCompatActivity {
         final ItemBean itemBean = new ItemBean();
         itemBean.setTitle(title);
         itemBean.setDrawableId(R.mipmap.none_event_img_meinv2);
-        showBean.setItemBean(itemBean);
-        return showBean;
+        itemBean.setShowType(ShowBean.Type_Three_Pic);
+        return itemBean;
     }
 
     /**
@@ -214,9 +205,6 @@ public class MainActivity extends AppCompatActivity {
      * @return
      */
     private ShowBean loadFourPic(String title) {
-        final ShowBean showBean = new ShowBean();
-        showBean.setShowType(ShowBean.Type_Four_Pic);
-
         if (TextUtils.isEmpty(title)) {
             title = "";
         }
@@ -224,8 +212,8 @@ public class MainActivity extends AppCompatActivity {
         final ItemBean itemBean = new ItemBean();
         itemBean.setTitle(title);
         itemBean.setDrawableId(R.mipmap.none_event_img_meinv3);
-        showBean.setItemBean(itemBean);
-        return showBean;
+        itemBean.setShowType(ShowBean.Type_Four_Pic);
+        return itemBean;
     }
 
 }

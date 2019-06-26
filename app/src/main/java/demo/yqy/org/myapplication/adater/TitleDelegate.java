@@ -30,7 +30,7 @@ public class TitleDelegate implements ItemViewDelegate<ShowBean> {
 
     @Override
     public void convert(ViewHolder holder, ShowBean showBean, int position) {
-        final TitleBean titleBean = showBean.getTitleBean();
+        final TitleBean titleBean = (TitleBean) showBean;
         if (titleBean != null) {
             ((TextView) holder.getView(R.id.tv_title)).setText(titleBean.getTitle());
         }

@@ -5,7 +5,7 @@ package demo.yqy.org.myapplication.bean;
  * @create 19-6-24
  * @Describe
  */
-public class TitleBean {
+public class TitleBean extends ShowBean {
     private String title;
 
     public TitleBean(String title) {
